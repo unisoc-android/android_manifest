@@ -5,6 +5,9 @@
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
            revision="refs/tags/android-10.0.0_r2" />
+  <remote  name="gitlab"
+           fetch="https://gitlab.com"
+           revision="refs/heads/W20.13.3" />
   <remote  name="github"
            fetch=".." />
   <default revision="refs/heads/W20.13.3"
@@ -29,6 +32,7 @@
   <project path="art" name="unisoc-android/android_art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" remote="aosp" />
   <project path="bootable/recovery" name="unisoc-android/android_bootable_recovery" groups="pdk" />
+  <project path="bsp" name="unisoc-android/android_bsp" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="developers/build" name="platform/developers/build" groups="developers,pdk" remote="aosp" />
@@ -768,6 +772,7 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
+  <project path="vendor/sprd" name="unisoc-android/android_vendor_sprd" groups="pdk" remote="gitlab" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
